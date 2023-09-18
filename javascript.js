@@ -1,10 +1,14 @@
-function msg() {
-    let name=prompt('who are you');
-    if(name=='arpit'){
-    alert('arpit chauhan')
-    
-}
-for(let i=0;i<10;i++){
-    document.write(i)
-}
+function validateform(){
+    let name=document.myform.name.value;
+    let password=document.myform.password.value;
+
+
+    if(name.length<5){
+        alert("name can't  be blanck")
+        return false
+    }
+    else if(password.length<6){
+        alert("password must be at least 6 charcater long");
+        return false
+    }
 }
